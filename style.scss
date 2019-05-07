@@ -1,0 +1,30 @@
+* {
+  box-sizing: border-box;
+}
+@mixin but () {
+  position: absolute;
+  color: white;
+  font-size: 70px;
+  z-index: 10;
+}
+.carousel-container {
+  width: 50%;
+  margin: auto;
+  //overflow: hidden;
+}
+.carousel-slide {
+  display: flex;
+  width: 50%;
+  height: 700px;
+}
+#nextButton {
+  @include but ();
+  top: 30%;
+  left: 65%;
+}
+#prevButton {
+  @include but ();
+  top: 30%;
+  left: 30%;
+}
+
